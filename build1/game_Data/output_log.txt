@@ -24,13 +24,40 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.311603 ms
+UnloadTime: 1.115257 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: a80 -> priority: 1 
-  Thread -> id: 1874 -> priority: 1 
+  Thread -> id: 383c -> priority: 1 
+  Thread -> id: 3cdc -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.772930 ms
+UnloadTime: 4.764833 ms
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 279.
-Total: 0.313678 ms (FindLiveObjects: 0.031999 ms CreateObjectMapping: 0.022518 ms MarkObjects: 0.245333 ms  DeleteObjects: 0.013432 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 307.
+Total: 0.236246 ms (FindLiveObjects: 0.019753 ms CreateObjectMapping: 0.013432 ms MarkObjects: 0.193580 ms  DeleteObjects: 0.009086 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.056393 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 419.
+Total: 0.171851 ms (FindLiveObjects: 0.021333 ms CreateObjectMapping: 0.013037 ms MarkObjects: 0.126024 ms  DeleteObjects: 0.010666 ms)
+
+server start
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+server started
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.355555 ms
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 280.
+Total: 0.416789 ms (FindLiveObjects: 0.022913 ms CreateObjectMapping: 0.020148 ms MarkObjects: 0.247703 ms  DeleteObjects: 0.124839 ms)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:10.129.33.109:63296}
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.601678 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 309.
+Total: 0.358320 ms (FindLiveObjects: 0.025283 ms CreateObjectMapping: 0.020148 ms MarkObjects: 0.302616 ms  DeleteObjects: 0.009481 ms)
 

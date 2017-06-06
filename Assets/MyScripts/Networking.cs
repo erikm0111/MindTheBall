@@ -24,16 +24,20 @@ public class Networking : MonoBehaviour
         started = true;
         isClient = false;
         Debug.Log("server started");
+        scenes.shouldStartServer = false;
     }
 
     public void SetupClient()
     {
         isClient = true;
         myClient = new NetworkClient();
-        myClient.Connect("127.0.0.1", 4444);
+        string ipaddress = scenes.ipaddress;
+        Debug.Log(ipaddress);
+        myClient.Connect(ipaddress, 4444);
         myClient.RegisterHandler(9001, ClientSync);
         myClient.RegisterHandler(9002, Lost);
         started = true;
+        scenes.shouldStartClient = false;
     }
 
     public void OnConnected(NetworkMessage msg) {
@@ -68,23 +72,17 @@ public class Networking : MonoBehaviour
 
     void Update()
     {
-        if (!started)
+        if (scenes.shouldStartServer)
         {
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                SetupServer();
-            }
-            if (Input.GetKeyDown(KeyCode.C))
-            {
-                SetupClient();
-            }
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                SetupServer();
-                SetupLocalClient();
-            }
+            Debug.Log("server start");
+            SetupServer();
         }
-        else
+        if (scenes.shouldStartClient)
+        {
+            Debug.Log("client start");
+            SetupClient();
+        }
+        if(started)
         {
           bean.rotation = myPlatform.rotation;
           bean.position = myBall.localPosition;
