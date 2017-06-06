@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class Networking : MonoBehaviour
 {
@@ -55,7 +56,8 @@ public class Networking : MonoBehaviour
     }
 
     public void Lost(NetworkMessage msg) {
-        Debug.Log("show lost screen");
+        //Debug.Log("show lost screen");
+        SceneManager.LoadScene("loss_screen");
     }
 
     // Use this for initialization
@@ -102,7 +104,8 @@ public class Networking : MonoBehaviour
         NetworkServer.SendToAll(9002, new WinNotification());
       }
 
-      Debug.Log("prikazi win screen");
+        //Debug.Log("prikazi win screen");
+        SceneManager.LoadScene("win_screen");
     }
 
     class WinNotification : MessageBase {

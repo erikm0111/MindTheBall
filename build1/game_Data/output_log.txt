@@ -24,12 +24,13 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.561282 ms
+UnloadTime: 1.311603 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: de4 -> priority: 1 
-  Thread -> id: 25d8 -> priority: 1 
-server started
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+  Thread -> id: a80 -> priority: 1 
+  Thread -> id: 1874 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.772930 ms
 
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:64172}
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 279.
+Total: 0.313678 ms (FindLiveObjects: 0.031999 ms CreateObjectMapping: 0.022518 ms MarkObjects: 0.245333 ms  DeleteObjects: 0.013432 ms)
+
