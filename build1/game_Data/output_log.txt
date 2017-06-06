@@ -17,28 +17,28 @@ Platform assembly: D:\UnityDocuments\mazeGame\MindTheBall\build1\game_Data\Manag
 Loading D:\UnityDocuments\mazeGame\MindTheBall\build1\game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\UnityDocuments\mazeGame\MindTheBall\build1\game_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading D:\UnityDocuments\mazeGame\MindTheBall\build1\game_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.027 seconds
+- Completed reload, in  0.028 seconds
 Platform assembly: D:\UnityDocuments\mazeGame\MindTheBall\build1\game_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\UnityDocuments\mazeGame\MindTheBall\build1\game_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.115257 ms
+UnloadTime: 3.201971 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 383c -> priority: 1 
-  Thread -> id: 3cdc -> priority: 1 
+  Thread -> id: eb4 -> priority: 1 
+  Thread -> id: 18bc -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.764833 ms
+UnloadTime: 4.617871 ms
 
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 307.
-Total: 0.236246 ms (FindLiveObjects: 0.019753 ms CreateObjectMapping: 0.013432 ms MarkObjects: 0.193580 ms  DeleteObjects: 0.009086 ms)
+Total: 0.309728 ms (FindLiveObjects: 0.056888 ms CreateObjectMapping: 0.028839 ms MarkObjects: 0.215308 ms  DeleteObjects: 0.008296 ms)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.056393 ms
+UnloadTime: 0.909035 ms
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 419.
-Total: 0.171851 ms (FindLiveObjects: 0.021333 ms CreateObjectMapping: 0.013037 ms MarkObjects: 0.126024 ms  DeleteObjects: 0.010666 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 539.
+Total: 0.266271 ms (FindLiveObjects: 0.027259 ms CreateObjectMapping: 0.014617 ms MarkObjects: 0.210172 ms  DeleteObjects: 0.014222 ms)
 
 server start
  
@@ -48,16 +48,19 @@ server started
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+You win!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.355555 ms
+UnloadTime: 0.669628 ms
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 280.
-Total: 0.416789 ms (FindLiveObjects: 0.022913 ms CreateObjectMapping: 0.020148 ms MarkObjects: 0.247703 ms  DeleteObjects: 0.124839 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 281.
+Total: 0.535308 ms (FindLiveObjects: 0.026864 ms CreateObjectMapping: 0.027654 ms MarkObjects: 0.297481 ms  DeleteObjects: 0.182518 ms)
 
-Log: connection {1} has been disconnected by timeout; address {::ffff:10.129.33.109:63296}
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.601678 ms
+UnloadTime: 0.447209 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 309.
-Total: 0.358320 ms (FindLiveObjects: 0.025283 ms CreateObjectMapping: 0.020148 ms MarkObjects: 0.302616 ms  DeleteObjects: 0.009481 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 310.
+Total: 0.385579 ms (FindLiveObjects: 0.028049 ms CreateObjectMapping: 0.023703 ms MarkObjects: 0.322765 ms  DeleteObjects: 0.010271 ms)
 
