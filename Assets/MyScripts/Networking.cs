@@ -19,6 +19,7 @@ public class Networking : MonoBehaviour
         NetworkServer.Listen(4444);
         NetworkServer.RegisterHandler(9000, Synced);
         NetworkServer.RegisterHandler(MsgType.Connect, OnConnected);
+        NetworkServer.RegisterHandler(9002, Lost);
         started = true;
         isClient = false;
         Debug.Log("server started");
@@ -30,6 +31,7 @@ public class Networking : MonoBehaviour
         myClient = new NetworkClient();
         myClient.Connect("127.0.0.1", 4444);
         myClient.RegisterHandler(9001, ClientSync);
+        myClient.RegisterHandler(9002, Lost);
         started = true;
     }
 
@@ -52,13 +54,16 @@ public class Networking : MonoBehaviour
         client.NetworkUpdate(msg.reader.ReadVector3(), msg.reader.ReadQuaternion());
     }
 
+    public void Lost(NetworkMessage msg) {
+        Debug.Log("show lost screen");
+    }
+
     // Use this for initialization
     void Start()
     {
         bean = new SyncBean();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!started)
@@ -88,6 +93,20 @@ public class Networking : MonoBehaviour
             NetworkServer.SendToAll(9001, bean);
           }
         }
+    }
+
+    public void NotifyWin() {
+      if (isClient) {
+        myClient.Send(9002, new WinNotification());
+      } else {
+        NetworkServer.SendToAll(9002, new WinNotification());
+      }
+
+      Debug.Log("prikazi win screen");
+    }
+
+    class WinNotification : MessageBase {
+      public bool information;
     }
 
     class SyncBean : MessageBase

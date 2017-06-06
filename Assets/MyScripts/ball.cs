@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class ball : MonoBehaviour {
 
+  public Networking net;
+  
   void Start () {
 	}
 
@@ -16,6 +18,7 @@ public class ball : MonoBehaviour {
       {
           Destroy(gameObject, .2f);
           Debug.Log("You win!");
+          net.NotifyWin();
       }
   }
 
